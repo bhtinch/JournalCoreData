@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62A80C2E25B637C200C0B876 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A80C2D25B637C200C0B876 /* CoreDataStack.swift */; };
+		62A80C3125B637DC00C0B876 /* Entry+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A80C3025B637DC00C0B876 /* Entry+Convenience.swift */; };
+		62A80C3725B63B1900C0B876 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A80C3625B63B1900C0B876 /* EntryController.swift */; };
+		62A80C3E25B63D6600C0B876 /* EntryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A80C3D25B63D6600C0B876 /* EntryListViewController.swift */; };
+		62A80C4125B63D7400C0B876 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A80C4025B63D7400C0B876 /* EntryDetailViewController.swift */; };
+		62A80C4725B6444E00C0B876 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A80C4625B6444E00C0B876 /* DateFormatter.swift */; };
 		7EDB75BD25B5C81B00B80B7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB75BC25B5C81B00B80B7D /* AppDelegate.swift */; };
 		7EDB75BF25B5C81B00B80B7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDB75BE25B5C81B00B80B7D /* SceneDelegate.swift */; };
 		7EDB75C425B5C81B00B80B7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDB75C225B5C81B00B80B7D /* Main.storyboard */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62A80C2D25B637C200C0B876 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataStack.swift; path = ../../../../../../../CoreDataStack.swift; sourceTree = "<group>"; };
+		62A80C3025B637DC00C0B876 /* Entry+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Entry+Convenience.swift"; path = "../../../../../../../Entry+Convenience.swift"; sourceTree = "<group>"; };
+		62A80C3625B63B1900C0B876 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EntryController.swift; path = ../../../../../../../EntryController.swift; sourceTree = "<group>"; };
+		62A80C3D25B63D6600C0B876 /* EntryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EntryListViewController.swift; path = ../../../../../../EntryListViewController.swift; sourceTree = "<group>"; };
+		62A80C4025B63D7400C0B876 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EntryDetailViewController.swift; path = ../../../../../../EntryDetailViewController.swift; sourceTree = "<group>"; };
+		62A80C4625B6444E00C0B876 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DateFormatter.swift; path = ../../../../../../../DateFormatter.swift; sourceTree = "<group>"; };
 		7EDB75B925B5C81B00B80B7D /* JournalCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDB75BC25B5C81B00B80B7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EDB75BE25B5C81B00B80B7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +49,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62A80C3325B63A5B00C0B876 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				62A80C3625B63B1900C0B876 /* EntryController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		62A80C4525B6443D00C0B876 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				62A80C4625B6444E00C0B876 /* DateFormatter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		7EDB75B025B5C81B00B80B7D = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +84,13 @@
 		7EDB75BB25B5C81B00B80B7D /* JournalCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				7EDB75D425B5C82500B80B7D /* Resources */,
-				7EDB75D825B5C83B00B80B7D /* Views */,
+				62A80C4525B6443D00C0B876 /* Helpers */,
 				7EDB75D925B5C84700B80B7D /* CoreData */,
+				62A80C3325B63A5B00C0B876 /* Model Controller */,
+				7EDB75D825B5C83B00B80B7D /* Views */,
+				7EDB75D425B5C82500B80B7D /* Resources */,
+				62A80C3D25B63D6600C0B876 /* EntryListViewController.swift */,
+				62A80C4025B63D7400C0B876 /* EntryDetailViewController.swift */,
 			);
 			path = JournalCoreData;
 			sourceTree = "<group>";
@@ -95,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				7EDB75C525B5C81B00B80B7D /* JournalCoreData.xcdatamodeld */,
+				62A80C2D25B637C200C0B876 /* CoreDataStack.swift */,
+				62A80C3025B637DC00C0B876 /* Entry+Convenience.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -169,8 +203,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62A80C4725B6444E00C0B876 /* DateFormatter.swift in Sources */,
+				62A80C3725B63B1900C0B876 /* EntryController.swift in Sources */,
+				62A80C2E25B637C200C0B876 /* CoreDataStack.swift in Sources */,
 				7EDB75BD25B5C81B00B80B7D /* AppDelegate.swift in Sources */,
 				7EDB75C725B5C81B00B80B7D /* JournalCoreData.xcdatamodeld in Sources */,
+				62A80C3E25B63D6600C0B876 /* EntryListViewController.swift in Sources */,
+				62A80C3125B637DC00C0B876 /* Entry+Convenience.swift in Sources */,
+				62A80C4125B63D7400C0B876 /* EntryDetailViewController.swift in Sources */,
 				7EDB75BF25B5C81B00B80B7D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
